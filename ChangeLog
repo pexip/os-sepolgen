@@ -1,3 +1,53 @@
+1.2.1 2013-10-31
+	* Add back attributes flag to fix exception crash from Dan Walsh.
+
+1.2 2013-10-30
+	* Return additional constraint information.
+	* Fix bug in calls to attributes from Dan Walsh.
+	* Add support for filename transitions from Dan Walsh.
+	* Fix sepolgen tests from Dan Walsh.
+
+1.1.9 2013-02-01
+	* audit.py: Handle times in foreign locals for audit2allow -b
+	* Use refpolicy_makefile() instead of hardcoding Makefile path
+	* understand role attributes
+
+1.1.8 2012-09-13
+	* Allow returning of bastard matches
+	* sepolgen: return and output constraint violation information
+	* audit2allow: one role/type pair per line
+
+1.1.7 2012-06-28
+	* Make use of setools optional within sepolgen
+	* We need to support files that have a + in them
+
+1.1.6 2012-03-28
+	* Fix dead links to www.nsa.gov/selinux
+	* audit.py Dont crash if empty data is passed to sepolgen
+	* do not use md5 when calculating hash signatures
+	* fix detection of policy loads
+
+1.1.5 2011-12-21
+	* better analysis of why things broke
+
+1.1.4 2011-12-05
+	* Allow ~ as a file identifier
+
+1.1.3 2011-11-03
+	* Ignore permissive qualifier if found in an interface
+	* Return name field in avc data
+
+1.1.2 2011-09-15
+	* src: sepolgen: add attribute storing infrastructure
+	* Change perm-map and add open to try to get better results on
+	* look for booleans that might solve problems
+	* sepolgen: audit2allow is mistakakenly not allowing valid module names
+	* tree: default make target to all not install
+
+1.1.1 2011-08-26
+	* refparser: include open among valid permissions
+	* refparser: add support for filename_trans rules
+
 1.1.0 2011-07-27
 	* Release, minor version bump
 
