@@ -64,6 +64,9 @@ def perm_map():
 def interface_info():
     return data_dir() + "/interface_info"
 
+def attribute_info():
+    return data_dir() + "/attribute_info"
+
 def refpolicy_makefile():
     chooser = PathChoooser("/etc/selinux/sepolgen.conf")
     return chooser("Makefile")

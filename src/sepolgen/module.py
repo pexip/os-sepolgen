@@ -37,8 +37,8 @@ import shutil
 def is_valid_name(modname):
     """Check that a module name is valid.
     """
-    m = re.findall("[^a-zA-Z0-9]", modname)
-    if len(m) == 0:
+    m = re.findall("[^a-zA-Z0-9_\-\.]", modname)
+    if len(m) == 0 and modname[0].isalpha():
         return True
     else:
         return False
@@ -120,7 +120,7 @@ class ModuleCompiler:
         self.semodule_package = "/usr/bin/semodule_package"
         self.output = output
         self.last_output = ""
-        self.refpol_makefile = "/usr/share/selinux/devel/Makefile"
+        self.refpol_makefile = defaults.refpolicy_makefile()
         self.make = "/usr/bin/make"
 
     def o(self, str):
