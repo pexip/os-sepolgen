@@ -506,7 +506,7 @@ def initialize_vars():
 
     Errorfunc    = None    # User defined error handler
 
-    Signature    = hashlib.md5()   # Digital signature of the grammar rules, precedence
+    Signature    = hashlib.sha256()   # Digital signature of the grammar rules, precedence
                                # and other information.  Used to determined when a
                                # parsing table needs to be regenerated.
 
@@ -594,7 +594,7 @@ class MiniProduction:
     pass
 
 # regex matching identifiers
-_is_identifier = re.compile(r'^[a-zA-Z0-9_-]+$')
+_is_identifier = re.compile(r'^[a-zA-Z0-9_-~]+$')
 
 # -----------------------------------------------------------------------------
 # add_production()
