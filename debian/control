@@ -9,7 +9,7 @@ XSBC-Pexip-Original-Uploaders: Manoj Srivastava <srivasta@debian.org>
 Standards-Version: 3.8.4.0
 Build-Depends-Indep: python-all-dev (>= 2.3.5-11)
 XS-Python-Version: all
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: python-sepolgen
 Architecture: all
