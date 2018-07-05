@@ -1,3 +1,23 @@
+2.6 2016-10-14
+	* Remove additional files when cleaning, from Nicolas Iooss.
+	* Add support for TYPEBOUNDS statement in INTERFACE policy files, from Miroslav Grepl.
+
+1.2.3 2016-02-23
+	* Support latest refpolicy interfaces, from Nicolas Iooss.
+	* Make sepolgen-ifgen output deterministic with Python>=3.3, from Nicolas Iooss.
+	* Use key function in sort(), from Petr Lautrbach.
+	* Reset line numbers when parsing files, from Nicolas Iooss.
+	* Convert cmp functions to key functions, from Robert Kuska.
+	* Decode output from Popen in Python3, from Robert Kuska.
+	* Comment constraint rules in output, from Miroslav Grepl via Petr Lautrbach.
+	* Add support for python3, from Robert Kuska.
+	* Add device tree ocontext nodes to Xen policy, from Daniel De Graaf.
+
+1.2.2 2015-02-02
+	* Fix bugs found by hardened gcc flags, from Nicolas Iooss.
+	* Remove unnecessary grammar in interface call param list to fix poor
+	  interface vectors, from Steve Lawrence
+
 1.2.1 2013-10-31
 	* Add back attributes flag to fix exception crash from Dan Walsh.
 
