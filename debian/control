@@ -10,7 +10,7 @@ Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 9), python (>= 2.6.6-3~), python-selinux, python-setools
 X-Python-Version: >= 2.5
 Homepage: http://userspace.selinuxproject.org/
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
 
 Package: python-sepolgen
 Architecture: all
