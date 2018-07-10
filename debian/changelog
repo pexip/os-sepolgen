@@ -1,3 +1,72 @@
+sepolgen (2.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Drop python2 version of the python module
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 02 Dec 2016 14:04:27 +0100
+
+sepolgen (2.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 24 Nov 2016 17:41:15 +0100
+
+sepolgen (2.6-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - debian/control: Bump {build-}dependencies to match new release
+  * Also build a python3 package
+  * debian/gbp.conf: Rename git-buildpackage section to buildpackage
+  * Ship /var/lib/sepolgen/perm_map in the python3 package as it's more likely
+    to be installed
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 01 Nov 2016 13:55:26 +0100
+
+sepolgen (1.2.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - debian/control: Bump {build-}dependencies to match new release
+  * debian/gbp.conf: Sign tags by default
+  * debian/control: Bump Standards-Version to 3.9.8 (no further changes)
+  * debian/control: Update the Vcs-* to please lintian (again)
+  * debian/control: Add dh-python to the build-dependencies
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 25 Apr 2016 21:04:41 +0200
+
+sepolgen (1.2.2-3) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 18 Nov 2015 18:32:54 +0100
+
+sepolgen (1.2.2-2) experimental; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    - Add a dependency against checkpolicy package, we have direct call to
+      semodule_package executable
+    - Add a dependency against the make package, make is used to automatically
+      create modules using audit2allow
+    - Add a Recommends against selinux-policy-dev, the Makefile from that
+      package might be used to generate modules when using audit2allow
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 18 Sep 2015 16:04:42 +0200
+
+sepolgen (1.2.2-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * debian/watch: Update the watchfile URL
+  * debian/control: Bump Standards-Version to 3.9.6 (no further changes)
+  * debian/control: Bump {build-}dependency against python-selinux to match
+    the release
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 04 Jun 2015 08:32:54 +0200
+
 sepolgen (1.2.1-1pexip1) pexip; urgency=low
 
   * Migrate to Jessie
