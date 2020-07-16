@@ -1,3 +1,9 @@
+sepolgen (2.6-3pexip2) pexip; urgency=medium
+
+  * Rebuild in buster environment
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Thu, 16 Jul 2020 06:51:11 +0000
+
 sepolgen (2.6-3pexip1) pexip; urgency=medium
 
   * Migrate to Stretch
